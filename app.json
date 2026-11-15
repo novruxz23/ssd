@@ -1,28 +1,20 @@
 {
   "expo": {
-    "name": "wisp-new",
-    "slug": "wisp-new",
+    "name": "Wisp Browser",
+    "slug": "wisp-browser",
     "version": "1.0.0",
     "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0a0a0c",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
     "plugins": [
-      "expo-splash-screen",
-      "expo-status-bar"
-    ]
+      ["expo-splash-screen", { "backgroundColor": "#0a0a0c", "image": "./assets/splash.png", "imageWidth": 10 }]
+    ],
+    "android": {
+      "package": "com.wisp.browser",
+      "permissions": ["INTERNET"],
+      "adaptiveIcon": { "foregroundImage": "./assets/adaptive.png", "backgroundColor": "#0a0a0c" }
+    },
+    "ios": { "bundleIdentifier": "com.wisp.browser" }
   }
 }
